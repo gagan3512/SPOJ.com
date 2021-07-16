@@ -1,0 +1,31 @@
+
+
+
+
+
+import java.util.*;
+public class Question4_fact
+{
+   static int getTrailingZeros(int n) {
+  int trailingZeros = 0;
+  int tmp;
+  while ((tmp = n / 5) >= 1) {
+    trailingZeros+=tmp;
+    n = tmp;
+  }
+  return trailingZeros;
+}
+    
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-->0)
+		{
+		    
+		    int n = sc.nextInt();
+            System.out.println(getTrailingZeros( n));
+		    
+		    
+		}
+	}
+}
